@@ -1,0 +1,24 @@
+{
+  "name": "cloudbase-adapter-node",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "eslint": "eslint \"./src/*.ts\"",
+    "build": "tsc -p tsconfig.json",
+    "prepublish": "npm run eslint&&npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cloudbase/adapter-interface": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.1",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "eslint": "^6.8.0",
+    "eslint-config-alloy": "^3.6.0",
+    "typescript": "^3.8.3"
+  }
+}
